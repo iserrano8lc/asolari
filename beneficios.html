@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Grupo Asolari | Paneles solares</title>
+    <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/estilo.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>     
+    <script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		
+		$('#slider').nivoSlider({
+			effect:'fade' ,
+			directionNav:false,
+			directionNavHide:true,
+			controlNav:true,
+			controlNavThumbs:false,
+			controlNavThumbsFromRel:false,				
+			captionOpacity:0,
+			animSpeed:700,
+			pauseOnHover:false,				
+			pauseTime:3000
+		});	
+		
+		$(".crumb a").click(function(){	
+			var $liga=$(this).attr("href");
+			$(".crumb a").removeClass("selected");
+			$(this).addClass("selected");
+			$(".paso").animate({"opacity":"0"},350);
+			$("#"+$liga).animate({"opacity":"1"},450);			
+			return false;
+		});
+		$(".crumb a:first").click();
+	});
+	</script>
+    <style type="text/css">
+	.slide{float:left; width:590px; height:374px;position:absolute; bottom:0px; right:0px}
+	.nivoSlider img {
+		position:absolute;
+		top:0px; right:0px;
+		right:0px; width:590px
+	}
+	.nivoSlider {
+	position:relative; margin:0px; top:0px; left:0px;
+    width:100%;
+    height:374px;
+	}
+	.nivo-controlNav a {
+	background-image:url(img/bullet-mini.png)
+	}
+
+	</style>
+</head>
+
+<body id="int">
+
+	<div class="bg" style="background:url(img/bgpic3.jpg) top center no-repeat">
+    
+    	<div class="topnav">
+        	<div class="insider">
+                <a href="index.html" class="logo"><img src="img/logo.png" /></a>
+                <!--
+                <a href="#" class="twitter"></a>
+                <a href="#" class="facebook"></a>-->
+                <ul class="principal">
+                    <li><a href="index.html">Home</a></li>                
+                    <li><a href="como-funciona.html">Como funciona</a></li>
+                    <li><a href="beneficios.html" class="selected">Beneficios</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    
+                    <li><a href="comprar.html" class="comprar">Comprar<span></span></a></li>
+                </ul>
+                <h1>BENEFICIOS</h1>                  
+            </div>
+        </div>  
+                		
+	</div>
+	<div class="contenedor">
+    	<div class="contenido">
+                	                        
+            <div class="middle">
+            
+            	<div class="cline" style="background:none">
+                    
+                    <!--
+                    <img src="img/panel.jpg" class="pica"/>
+                    -->
+                    
+                    <div style="width: 450px; height: 323px; float: left; margin-top: 10px; overflow: hidden; border-radius: 10px; margin-right:30px; margin-left:20px">
+                    	<iframe width="450" height="323" src="//www.youtube.com/embed/u4RinjdWbkc?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+                    </div>
+                    
+                    <div class="bullets">
+                    	<div class="bullet">
+                            <span class="bgbullet"></span>
+                            <span>
+                                <h4>Ahorro que se refleja</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus nulla orci, et fringilla elit volutpat non. Donec sit amet nunc vehicula, blandit nisl at, elementum leo. </p>                                
+                             </span>
+                        </div>
+                        <div class="bullet">
+                            <span class="bgbullet"></span>
+                            <span>
+                                <h4>Cuida al medio ambiente</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus nulla orci, et fringilla elit volutpat non. Donec sit amet nunc vehicula, blandit nisl at, elementum leo. </p>                                
+                             </span>
+                        </div>
+                        <div class="bullet">
+                            <span class="bgbullet"></span>
+                            <span>
+                                <h4>Para Hogar & Oficina</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus nulla orci, et fringilla elit volutpat non. Donec sit amet nunc vehicula, blandit nisl at, elementum leo. </p>                                
+                             </span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>                            
+        </div>
+    </div>
+    
+    <div class="contenedor">
+    	<div class="contenido">                	                      
+            <div class="middle">
+                
+                   
+                 <div class="divisoria">
+                    <div class="special" style="margin-left:25px; width:440px">
+                        <h1>Lorem ipsum dolor sit</h1>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin nec enim in accumsan. Donec vestibulum ut leo a interdum. Integer tristique odio sed porta malesuada. Nunc eleifend orci vitae lacinia fermentum.
+                        <br/>
+                        <br/>
+                        Maecenas sed interdum lacus. Nunc faucibus auctor sapien nec luctus.
+                        <br/>
+                        <br/>
+                        Ut porta posuere lectus sit amet posuere. Morbi tincidunt tincidunt ipsum nec congue. Pellentesque a urna non elit posuere lacinia.
+                        </p>
+                    </div>
+                    <div class="special" style="margin-right:25px; width:440px">
+                        <h1>Donec sit amer nunc</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin nec enim in accumsan. Donec vestibulum ut leo a interdum. Integer tristique odio sed porta malesuada. Nunc eleifend orci vitae lacinia fermentum.</p>
+                        <h2 style="margin-top:20px">Sit amet consectetur</h2>
+                        <p>Maecenas sed interdum lacus. Nunc faucibus auctor sapien nec luctus. Ut porta posuere lectus sit amet posuere. Morbi tincidunt tincidunt ipsum nec congue. Pellentesque a urna non elit posuere lacinia.</p>
+                    </div>
+                 </div>
+                        
+            
+            </div>                            
+        </div>
+    </div>
+    <div class="footer">
+        <div class="legend">
+        	<p class="warrow"></p>
+            <p>Grupo Asolari</p><span>Copyright © 2015 Todos los derechos reservados.  |  Contactanos al 01800 123 45 67 - Diseño por 
+            <a href="http://www.arkanmedia.com" class="arkanmedia">Arkanmedia</a></span>                    	
+        </div>
+                        
+    </div>
+
+</body>
+</html>

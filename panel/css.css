@@ -1,0 +1,129 @@
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0; padding:0;}
+table{ border-collapse:collapse; border-spacing:0;}
+fieldset,img{ border:0;}
+address,caption,cite,code,dfn,var{ font-style:normal; font-weight:normal;}
+ol,ul{ list-style:none;}
+caption,th{ text-align:left;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal;}
+q:before,q:after{ content:'';}
+abbr,acronym{ border:0;}
+a{ text-decoration:none;}
+a:active {outline: none;}
+/*end reset*/
+
+body{ background:url(../img/bg.jpg) repeat-x #383838}
+form{ width:400px; margin:0 auto; background:#FFF; -moz-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;-khtml-border-radius:10px;
+height:320px; position:absolute;-moz-box-shadow:0 18px 10px -12px rgb(0, 0, 0);-webkit-box-shadow:0 18px 10px -12px rgb(0, 0, 0);box-shadow:0 18px 10px -12px rgb(0, 0, 0);-khtml-box-shadow:0 18px 10px -12px rgb(0, 0, 0);
+margin-top:-160px; top:50%; left:50%; margin-left:-200px;
+-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=180,strength=5)";
+filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=180,strength=5);
+
+}
+.logologin{ position:absolute; top:-7px; left:50px}
+form.login h1{position:absolute; right:20px; top:20px; font-family:"Arial Black", Gadget, sans-serif; font-size:25px; text-align:right; letter-spacing:-1px; color:#582D46; text-shadow:0px 1px 0px rgba(0,0,0,0.8)}
+form.login h1 span{ display:block; font-family:Verdana, Geneva, sans-serif; font-size:12px; border-top:1px dotted #666; color:#999; letter-spacing:0px; padding-top:5px; text-shadow:0px 0px 0px #fff}
+
+form.login .alerta{width:150px; position:absolute; top:0px}
+form.login .campos{width:280px; margin:20px; margin-top:170px; height:130px; float:left; margin-left:60px}
+form.login fieldset{width:280px; float:left; margin-top:25px}
+form.login label{font-family:Verdana, Geneva, sans-serif; font-size:12px; color:#999; float:left; line-height:32px}
+form.login input.texto{ float:right; width:170px; height:20px; padding:6px; -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; border:1px solid #ccc;-khtml-border:1px solid #ccc;
+background:#F8f8f8; color:#999; text-shadow:1px 1px 0px #fff;font-family:Verdana, Geneva, sans-serif; font-size:12px; outline:none}
+form.login input.texto:focus{ border:1px solid #333; background:#fff; color:#333; outline:none}
+
+form.login input.boton{ float:right; width:auto; height:auto; padding:6px; margin-right:20px; -moz-border-radius:8px 8px 0px 0px;
+border-radius:8px 8px 0px 0px;-webkit-border-radius:8px 8px 0px 0px;-khtml-border-radius:8px 8px 0px 0px;
+border:0px none; background:#582D46; color:#fff; font-weight:bold; cursor:pointer;font-family:Verdana, Geneva, sans-serif; font-size:13px; height:30px; outline:none; text-shadow:0px 1px 0px rgba(0,0,0,0.4); position:absolute; bottom:0px; right:0px}
+
+form.login input.boton:hover{ padding-bottom:10px; height:34px}
+
+div.info{ width:360px; margin:0 auto; position:absolute; bottom:10px; left:50%; margin-left:-180px; text-align:center}
+div.info span{color:#fff; text-shadow:1px 1px 0px #000; font-family:Tahoma, Geneva, sans-serif; font-size:12px}
+div.info span a{font-weight:bold; color:#fff; border-bottom:1px dashed #fff; padding-bottom:1px}
+div.info span a:hover{color:#ebbb01; text-shadow:1px 1px 0px #000; border-bottom:1px dashed #ebbb01}
+
+div.info span b{color:#ebbb01; font-weight:normal}
+/**validate**/
+	.inputContainer{position:relative; float:left;}
+	.formError {
+			position:absolute;
+			top:300px; left:300px;
+			padding-bottom:13px;
+			display:block;
+			z-index:5000;
+			cursor:pointer;
+		}
+			#debugMode{
+				background:#000;
+				position:fixed;
+				width:100%; height:200px;
+				top:0; left:0;
+				overflow:scroll;
+				opacity:1.0;
+				display:block;
+				padding:10px;
+				color:#fff;
+				font-size:14px;
+				z-index:100000;
+			}
+		
+			.ajaxSubmit{ padding:20px; background:#55ea55;border:1px solid #999;display:none}
+			.formError .formErrorContent {
+				width:100%; 
+				background:#000;
+				color:#fff;
+				width:150px;
+				font-family:tahoma;
+				font-size:11px; line-height:14px; letter-spacing:0px;
+				border:2px solid #ddd;
+				box-shadow: 0px 0px 6px #000;
+				-moz-box-shadow: 0px 0px 6px #000;
+				-webkit-box-shadow: 0px 0px 6px #000;
+				padding:10px 10px 10px 10px;
+				border-radius: 6px;
+				-moz-border-radius: 6px;
+				-webkit-border-radius: 6px;
+			}
+			.greenPopup .formErrorContent {background:#33be40;}
+			
+			.blackPopup .formErrorContent {background:#393939;color:#FFF;}
+			
+			.formError .formErrorArrow{
+				width:15px;
+				margin:-2px 0 0 13px;
+				z-index:5001;
+			}
+			.formError .formErrorArrowBottom{top:0;margin:-6px;}
+			
+				.formError .formErrorArrow div{
+					border-left:2px solid #ddd;
+					border-right:2px solid #ddd;
+					box-shadow: 0px 2px 3px #444;
+					-moz-box-shadow: 0px 2px 3px #444;
+					-webkit-box-shadow: 0px 2px 3px #444;
+					font-size:0px; height:1px; background:#000;margin:0 auto;line-height:0px; font-size:0px; display:block;
+				}
+					.formError .formErrorArrowBottom div{
+						box-shadow: none;
+						-moz-box-shadow: none;
+						-webkit-box-shadow: none;
+					}
+					
+				.greenPopup .formErrorArrow div{background:#000;}
+				.blackPopup .formErrorArrow div{background:#000;color:#FFF;}
+
+				.formError .formErrorArrow .line10{width:15px;border:none;} 
+				.formError .formErrorArrow .line9{width:13px;border:none;} 
+				.formError .formErrorArrow .line8{width:11px;} 
+				.formError .formErrorArrow .line7{width:9px;} 
+				.formError .formErrorArrow .line6{width:7px;} 
+				.formError .formErrorArrow .line5{width:5px;} 
+				.formError .formErrorArrow .line4{width:3px;} 
+				.formError .formErrorArrow .line3{width:1px;
+					border-left:2px solid #ddd;
+					border-right:2px solid #ddd;
+					border-bottom:0px solid #ddd;} 
+				.formError .formErrorArrow .line2{width:3px;border:none;background:#ddd;}
+				.formError .formErrorArrow .line1{width:1px;border:none;background:#ddd;}  
+/**end validate**/
