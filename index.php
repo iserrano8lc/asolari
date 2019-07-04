@@ -32,23 +32,6 @@
         	$nMenu = 1;
 			include("header.php")
 		?>
-                
-		<!--<div class="topnav">
-        	<div class="insider">
-                <a href="index.html" class="logo"><img src="img/logo.png" /></a>
-                
-                <a href="#" class="twitter"></a>
-                <a href="#" class="facebook"></a>
-                <ul class="principal">
-                    <li><a href="index.html" class="selected">Home</a></li>                
-                    <li><a href="como-funciona.html">Como funciona</a></li>
-                    <li><a href="beneficios.html">Beneficios</a></li>
-                    <li><a href="productos.html">Productos</a></li>                    
-                    <li><a href="comprar.html" >Comprar<span></span></a></li>
-                </ul>
-                
-            </div>
-        </div>-->
         
         <div class="nivoSlider" id="slider">
         	<img src="img/bgpic.jpg" title='<span>SOMOS TU<br>MEJOR <b>OPCIÓN</b></span>'/> 
@@ -67,7 +50,7 @@
                     <a href="beneficios.php#porquecontratar">LEER MÁS</a>
                  </span>
             </div>
-            <p class="call"><b>LLÁMANOS AHORA</b><span>(229) 365 55 11</span></p><!--2299300386-->
+            <p class="call"><b>LLÁMANOS AHORA</b><span><a href="tel:2299608787">(229) 960 87 87</a></span></p>
             <img src="img/panel_back.png" class="panel_back"/>
             <img src="img/panel.png" class="panel"/>
         </div>

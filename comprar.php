@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -46,24 +46,7 @@
     	<?PHP
         	$nMenu = 5;
 			include("header.php")
-		?>    
-    	<!--<div class="topnav">
-        	<div class="insider">
-                <a href="index.html" class="logo"><img src="img/logo.png" /></a>
-                
-                <a href="#" class="twitter"></a>
-                <a href="#" class="facebook"></a>
-                <ul class="principal">
-                    <li><a href="index.html">Home</a></li>                
-                    <li><a href="como-funciona.html">Como funciona</a></li>
-                    <li><a href="beneficios.html">Beneficios</a></li>
-                    <li><a href="productos.html" >Productos</a></li>
-                    
-                    <li><a href="comprar.html" class="comprar selected">Comprar<span></span></a></li>
-                </ul>
-                <h1>Contacto</h1>                  
-            </div>
-        </div>-->		
+		?>	
 	</div>
     
 	<div class="contenedor">
@@ -91,18 +74,26 @@
                     	
                         <div class="mapa">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1885.5117878908118!2d-96.07575574211!3d19.062701031897138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c36ac9be4fd483%3A0x6e6ffe6332a13df4!2sUnnamed+Road%2C+Veracruz!5e0!3m2!1sen!2smx!4v1537291355702" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        	<!--<span style="background:#fff; padding:8px; border-radius:3px; box-shadow:0px 1px 2px #333; position:absolute; right:10px; top:10px;z-index:99; font-family:HBold; font-size:12px">Ubicación de casa muestra</span>	
-                        	<div id="map_canvas" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; border-radius:10px; overflow:hidden"></div> -->
                         </div> 
-                        <p>
-                            <b style="font-family:HBold; font-weight:normal; font-size:16px">Aprovechamiento Solar Integral</b>
-                            <br />
-                            Mar Egeo 29, Fracc. Lomas del Mar<br />
-                            Alvarado, Ver, C.P. 94293<br />
-                            Cel. (229) 365 55 11<br />
-                            Email: <a href="mailto:ventas@asolari.com">ventas@asolari.com</a><br /><br />
+                        <div>
+                            <p><b style="font-family:HBold; font-weight:normal; font-size:16px">Aprovechamiento Solar Integral</b></p>
+                            <br style="clear: both;" />
+                            <fieldset style="margin: 1em 0;">
+								<legend style="display: block; font-weight: bold;">Matriz</legend>
+								Nizuc 5, Parque Capulines<br />
+								Cancún, Q.R., C.P. 77505<br />
+							</fieldset>
+							<fieldset style="margin: 1em 0;">
+								<legend style="display: block; font-weight: bold;"">Sucursal</legend>
+								Mar Egeo 29, Fracc. Lomas del Mar<br />
+								Alvarado, Ver, C.P. 94293<br />
+							</fieldset>
+							<span style="float: left; margin-right: 0.5em;">Cel. </span><a href="tel:9981955203">(998) 195 52 03</a><br />
+							<span style="float: left; margin-right: 0.5em;">Cel. </span><a href="tel:2299608787">(229) 960 87 87</a><br />
+							<span style="float: left; margin-right: 0.5em;">Cel. </span><a href="tel:2299608791">(229) 960 87 91</a><br />
+                            <p><span style="float: left; margin-right: 0.5em;">Email: </span><a href="mailto:ventasasi@asienergiasolar.com">ventasasi@asienergiasolar.com</a></p><br /><br />
                             <b style="font-family:HBold; font-weight:normal; font-size:16px; color:#D08B00">Visita casa muestra con previa cita</b>
-                        </p>
+                        </div>
                   	</div>
                     
                     <div class="special">
@@ -116,11 +107,7 @@
                             <input type="text" name="cf_emp" id="cf_emp" class="email" placeholder="Empresa" style="margin-top:18px"/>
                             
                             <input type="submit" value="Enviar" class="enviar" style="margin-top:18px"/>
-                            <textarea name="cf_comentario" id="cf_comentario" placeholder="Tú Mensaje"></textarea>
-                            <!--<input type="text" value="" class="nombre" placeholder="Nombre"/>
-                            <input type="text" value="" class="email" placeholder="Email"/>
-                            <input type="submit" value="Enviar" class="enviar"/>
-                            <textarea placeholder="Tú Mensaje"></textarea>-->
+                            <textarea name="cf_comentario" id="cf_comentario" placeholder="Tu Mensaje"></textarea>
                         </form>
                     </div>
        			</div>            	
@@ -129,14 +116,7 @@
     </div>
     <?PHP
     	include("footer.php")
-	?>    
-    <!--<div class="footer">
-        <div class="legend">
-        	<p class="warrow"></p>
-            <p>Grupo Asolari</p><span>Copyright © 2015 Todos los derechos reservados.  |  Contactanos al 01800 123 45 67 - Diseño por 
-            <a href="http://www.arkanmedia.com" class="arkanmedia">Arkanmedia</a></span>                    	
-        </div>                        
-    </div>-->
+	?>
 <script> 
 	https://www.google.com.mx/maps/@19.0641343,-96.0756182,16z
 // <![CDATA[

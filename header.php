@@ -8,7 +8,7 @@
             <li><a href="beneficios.php" <?PHP if($nMenu == 3) echo 'class="selected"' ?>>Nosotros</a></li>
             <li><a href="como-funciona.php" <?PHP if($nMenu == 2) echo 'class="selected"' ?>>Como funciona</a></li>
             <li><a href="amortizacion-y-financiamiento.php" <?PHP if($nMenu == 7) echo 'class="selected"' ?>>Amortización & Financiamiento</a></li>
-            <li><a href="productos.php" <?PHP if($nMenu == 4) echo 'class="selected"' ?>>Productos</a></li>                    
+            <!--<li><a href="productos.php" <?PHP //if($nMenu == 4) echo 'class="selected"' ?>>Productos</a></li>-->
             <li><a href="comprar.php" <?PHP if($nMenu == 5) echo 'class="selected"' ?>>Contacto</a></li>
         </ul>
         <h1><?PHP 
